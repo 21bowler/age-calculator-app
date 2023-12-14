@@ -69,7 +69,7 @@
     <main
       class="container flex flex-col bg-white py-6 rounded-2xl rounded-br-[30%] w-[90%] md:max-w-lg"
     >
-      <div class="flex gap-3 p-4">
+      <div class="flex gap-3 p-4 max-[450px]:">
         <!-- Day -->
         <div>
           <label for="day" class="text-smokeyGray text-sm">DAY</label>
@@ -77,7 +77,7 @@
             type="number"
             placeholder="DD"
             id="input-day"
-            class="outline-none border-2 border-lightGray rounded w-32 mt-2 px-3 py-4 focus:border-2 focus:border-purple"
+            class="outline-none border-2 border-lightGray rounded w-32 mt-2 px-3 py-4 focus:border-2 focus:border-purple max-[450px]:w-24"
           />
           <p id="error-day" class="text-xs mt-2 text-lightRed"></p>
         </div>
@@ -88,7 +88,7 @@
             type="number"
             placeholder="MM"
             id="input-month"
-            class="outline-none border-2 border-lightGray rounded w-32 mt-2 px-3 py-4 focus:border-2 focus:border-purple"
+            class="outline-none border-2 border-lightGray rounded w-32 mt-2 px-3 py-4 focus:border-2 focus:border-purple max-[450px]:w-24"
           />
           <p id="error-month" class="text-xs mt-2 text-lightRed"></p>
         </div>
@@ -99,7 +99,7 @@
             type="number"
             placeholder="YYYY"
             id="input-year"
-            class="outline-none border-2 border-lightGray rounded w-32 mt-2 px-3 py-4 focus:border-2 focus:border-purple"
+            class="outline-none border-2 border-lightGray rounded w-32 mt-2 px-3 py-4 focus:border-2 focus:border-purple max-[450px]:w-24"
           />
           <p id="error-year" class="text-xs mt-2 text-lightRed"></p>
         </div>
@@ -116,12 +116,21 @@
 
       <!-- Output from forms -->
       <div class="text-[3rem] pl-10 py-4 leading-none">
-        <p><span class="text-purple  italic font-bold mr-4" id="output-years">--</span>years</p>
         <p>
-          <span class="text-purple italic font-bold mr-4" id="output-months">--</span
+          <span class="text-purple italic font-bold mr-4" id="output-years"
+            >--</span
+          >years
+        </p>
+        <p>
+          <span class="text-purple italic font-bold mr-4" id="output-months"
+            >--</span
           >months
         </p>
-        <p><span class="text-purple italic font-bold mr-4" id="output-days">--</span>days</p>
+        <p>
+          <span class="text-purple italic font-bold mr-4" id="output-days"
+            >--</span
+          >days
+        </p>
       </div>
     </main>
 
